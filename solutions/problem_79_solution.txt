@@ -1,0 +1,20 @@
+The vectorized equivalent of `left_rotate_matrix` using NumPy is:
+
+```
+def left_rotate_matrix_vectorized(matrix, k):
+    # Convert matrix to numpy array
+    matrix = np.array(matrix)
+    
+    # Get number of rows and columns
+    rows = matrix.shape[0]
+    cols = matrix.shape[1]
+    
+    # Compute number of rotations required
+    num_rotations = k % cols
+    
+    # Slice matrix to get first part and second part
+    first_part = matrix[:, :num_rotations]
+    second_part = matrix[:, num_rotations:]
+    
+    # Concatenate parts to get rotated matrix
+    rotated_matrix = np.concatenate((second_part, first_part), axis=1)

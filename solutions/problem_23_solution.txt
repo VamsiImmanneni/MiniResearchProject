@@ -1,0 +1,11 @@
+import numpy as np
+
+def negate_matrix(lst1, lst2):
+    matrix1 = np.array(lst1)
+    matrix2 = np.array(lst2)
+    return np.subtract(matrix2, matrix1)
+
+def vectorize_negate_matrix(lst1, lst2):
+    matrix1 = np.array(lst1)
+    matrix2 = np.array(lst2)
+    return matrix2 - matrix1

@@ -1,0 +1,19 @@
+import numpy as np
+
+def replace_negatives_with_zero(a, b):
+    result = []
+    for num1, num2 in zip(a, b):
+        if num1 < 0:
+            result.append(0)
+        else:
+            result.append(num1 * num2)
+    return np.array(result)
+
+def replace_negatives_with_zero_vectorized(a, b):
+    a = np.array(a)
+    b = np.array(b)
+    result = np.where(a < 0, 0, a * b)
+    return result
+
+# Test input with a mix of negative and positive numbers
+print(replace_negatives_with_zero_vectorized([-1, 2, -3, 4, -5], [10

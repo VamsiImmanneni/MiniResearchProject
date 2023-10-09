@@ -1,0 +1,20 @@
+import numpy as np
+
+def is_magic_square(arr):
+
+    # Convert the input list into a NumPy array
+    arr = np.array(arr)
+
+    # Check if all rows have the same sum
+    if arr.sum(axis=1).ptp() != 0:
+        return False
+
+    # Check if all columns have the same sum
+    if arr.sum(axis=0).ptp() != 0:
+        return False
+
+    # Check if the diagonal sums are equal
+    if arr.diagonal().sum() != arr[::-1].diagonal().sum():
+        return False
+
+    return True

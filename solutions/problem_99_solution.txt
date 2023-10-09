@@ -1,0 +1,14 @@
+import numpy as np
+
+def matrix_absolute_difference(a, b):
+    return abs(a - b)
+    
+    
+print(matrix_absolute_difference([1, 2, 3], [4, 5, 6]))
+print(matrix_absolute_difference([4, 5, 6], [1, 2, 3]))
+
+"""
+Outputs:
+[3 3 3]
+[3 3 3]
+"""

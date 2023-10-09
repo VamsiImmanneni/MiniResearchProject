@@ -1,0 +1,11 @@
+import numpy as np
+
+def transpose(lists):
+    # create a numpy array from the input lists
+    arr = np.array(lists)
+
+    # use the transpose() function to transpose the array
+    arr_T = arr.transpose()
+
+    # return the transposed array as a list
+    return arr_T.tolist()

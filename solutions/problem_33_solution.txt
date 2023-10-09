@@ -1,0 +1,26 @@
+import numpy as np
+
+def lower_triangular(A, B):
+    # initialize empty list
+    result_list = []
+
+    # iterate over rows of A
+    for i in range(len(A)):
+        # initialize empty list for current row
+        row = []
+
+        # iterate over columns of A
+        for j in range(len(A[0])):
+            # add element to row if it is lower triangular
+            if i >= j:
+                row.append(A[i][j])
+
+        # append row to result list
+        result_list.append(row)
+
+    # iterate over rows of B
+    for i in range(len(B)):
+        # initialize empty list for current row
+        row = []
+
+        # iterate over columns of B

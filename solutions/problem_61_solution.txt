@@ -1,0 +1,17 @@
+import numpy as np
+
+def is_orthogonal_np(v1, v2):
+    v1 = np.array(v1)
+    v2 = np.array(v2)
+    return np.dot(v1, v2) == 0
+
+# Test input where vectors are orthogonal
+print(is_orthogonal_np([1, 0], [0, 1]))
+
+# Test input where vectors are not orthogonal
+print(is_orthogonal_np([1, 1], [1, 0]))
+
+# Test input where vectors are 3-dimensional and orthogonal
+print(is_orthogonal_np([3, -4, 5], [4, 3, 0]))
+
+# Test input where vectors are 3-dimensional and

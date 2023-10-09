@@ -1,0 +1,2 @@
+def rotate_90(arr):
+    return np.transpose(np.fliplr(arr))

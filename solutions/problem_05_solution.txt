@@ -1,0 +1,4 @@
+import numpy as np
+
+def vectorized_scalar_multiplication(a, b):
+    return np.multiply(a, b)

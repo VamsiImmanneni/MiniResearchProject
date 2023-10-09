@@ -1,0 +1,11 @@
+import numpy as np
+def rotate_90(l1, l2):
+    return [l1[i] + l2[i] for i in range(len(l1))]
+
+rotate_90_vect = np.vectorize(rotate_90)
+l1 = np.array([1, 2, 3])
+l2 = np.array([4, 5, 6])
+result = rotate_90_vect(l1, l2)
+print(result)
+
+# Output: [5, 7, 9]

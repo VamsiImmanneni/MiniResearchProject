@@ -1,0 +1,12 @@
+```
+import numpy as np
+
+def diagonal_average(rows):
+    diagonals = []
+    for i in range(len(rows)):
+        diagonals.append(rows[i][i])
+    return sum(diagonals) / len(diagonals)
+
+def diagonal_average_vectorized(rows):
+    diagonals = np.diagonal(rows)
+    return np.mean(diagonals)

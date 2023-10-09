@@ -1,0 +1,7 @@
+import numpy as np
+
+def count_zeroes(*args):
+    return [sum(arg == 0 for arg in args)]
+
+def count_zeroes_numpy(*args):
+    return np.sum([arg == 0 for arg in args], axis=0)

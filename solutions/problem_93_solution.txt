@@ -1,0 +1,7 @@
+import numpy as np
+
+def non_border_elements(input_list1, input_list2):
+    return [input_list1[1:-1], input_list2[1:-1]]
+
+def non_border_elements_np(input_array1, input_array2):
+    return np.array([input_array1[1:-1], input_array2[1:-1]])

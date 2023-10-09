@@ -1,0 +1,9 @@
+import numpy as np
+def vectorized_elementwise_log(x, y):
+    return np.log(np.array(x)) + np.log(np.array(y))
+
+# Alternatively, using NumPy vectorization directly:
+
+import numpy as np
+def vectorized_elementwise_log(x, y):
+    return np.log(x) + np.log(y)

@@ -1,0 +1,23 @@
+# Import NumPy
+import numpy as np
+
+# Define is_diagonal function
+def is_diagonal(matrix):
+    # Convert list to NumPy array
+    matrix = np.array(matrix)
+
+    # Get length of rows and columns
+    rows = matrix.shape[0]
+    cols = matrix.shape[1]
+
+    # Create identity matrix with same shape as input
+    identity = np.eye(rows, cols)
+
+    # Compare input to identity matrix
+    result = (matrix == identity)
+
+    # Check if all values are True (diagonal)
+    return np.all(result)
+
+# Test is_diagonal function
+print(is_diagonal([[1, 0, 0], [0, 1, 0], [0

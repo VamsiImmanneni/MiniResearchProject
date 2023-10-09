@@ -1,0 +1,22 @@
+import numpy as np
+
+def replace_less_than(val, arr):
+    # initialize an empty list to store the result
+    res = []
+    # iterate over the elements in arr
+    for num in arr:
+        # check if the element is less than val
+        if num < val:
+            # if yes, add val to the result list
+            res.append(val)
+        else:
+            # if not, add the element to the result list
+            res.append(num)
+    # convert the result list to a numpy array
+    return np.array(res)
+
+# test case
+arr = [1,2,3,4,5]
+val = 3
+print(replace_less_than(val, arr))
+# output:

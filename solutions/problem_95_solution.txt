@@ -1,0 +1,4 @@
+import numpy as np
+
+def is_square_vectorized(arr1, arr2):
+    return np.all(np.sqrt(arr1) == arr2)

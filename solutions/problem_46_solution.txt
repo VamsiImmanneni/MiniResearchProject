@@ -1,0 +1,11 @@
+import numpy as np
+
+def count_non_zero_numpy(a, b):
+    # Convert input lists to NumPy arrays
+    a_arr = np.array(a)
+    b_arr = np.array(b)
+    
+    # Compute result vector using vectorized operations
+    result = (a_arr != 0) + (b_arr != 0)
+    
+    return result

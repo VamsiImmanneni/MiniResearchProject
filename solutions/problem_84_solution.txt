@@ -1,0 +1,14 @@
+def border_sum(A):
+    top_row = A[0]
+    bottom_row = A[-1]
+    left_column = A[:,0]
+    right_column = A[:,-1]
+    return np.sum(top_row) + np.sum(bottom_row) + np.sum(left_column) + np.sum(right_column)
+
+# Alternative version:
+def border_sum(A):
+    top_row = A[0,:]
+    bottom_row = A[-1,:]
+    left_column = A[:,0]
+    right_column = A[:,-1]
+    return np.sum(top_row) + np.sum(bottom_row) + np.sum(left_column) + np.sum(right_column)

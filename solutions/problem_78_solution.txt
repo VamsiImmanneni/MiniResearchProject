@@ -1,0 +1,2 @@
+def vectorized_anti_diagonal_sum(a, b):
+    return np.diag(a + b[::-1])

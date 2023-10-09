@@ -1,0 +1,9 @@
+import numpy as np
+
+def matrix_rank(A):
+    A = np.array(A)
+    rank = 0
+    while np.linalg.matrix_rank(A) != 0:
+        rank += 1
+        A = A[:-1, :-1]
+    return rank

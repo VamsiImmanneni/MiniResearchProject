@@ -1,0 +1,4 @@
+def is_normal_vec(X, Y):
+    X = np.array(X)
+    Y = np.array(Y)
+    return np.all(np.abs(X - Y) < np.abs(X + Y))

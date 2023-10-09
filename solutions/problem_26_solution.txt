@@ -1,0 +1,1 @@
+I am unable to generate the function `zero_matrix` as it is not provided. Can you please provide the function `zero_matrix` so that I can generate its vectorized equivalent using NumPy?

@@ -1,0 +1,17 @@
+import numpy as np
+
+def replace_greater_than(x, y, z):
+    result = []
+    for i in range(len(x)):
+        if x[i] > y[i]:
+            result.append(z[i])
+        else:
+            result.append(x[i])
+    return result
+
+def replace_greater_than_np(x, y, z):
+    x = np.array(x)
+    y = np.array(y)
+    z = np.array(z)
+    result = np.where(x > y, z, x)
+    return result

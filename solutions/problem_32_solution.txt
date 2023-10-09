@@ -1,0 +1,17 @@
+The vectorized equivalent of `upper_triangular` using NumPy is shown below:
+
+```
+import numpy as np
+
+def upper_triangular(A):
+    return np.triu(A)
+
+# Example Usage:
+A = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(upper_triangular(A))
+
+# Output:
+[[1 2 3]
+ [0 5 6]
+ [0 0 9]]
+```

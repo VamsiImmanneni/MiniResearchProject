@@ -1,0 +1,19 @@
+import numpy as np
+
+def shear_matrix(shear_factors):
+    # Initialize identity matrix
+    matrix = np.identity(len(shear_factors) + 1)
+
+    # Fill diagonal elements with shear factors
+    np.fill_diagonal(matrix[1:], shear_factors)
+
+    return matrix
+
+# Vectorized shear matrix function
+def shear_matrix_vectorized(shear_factors):
+    # Create shear matrix from input factors using NumPy array operations
+    matrix = np.diag(shear_factors)
+    matrix = np.insert(matrix, 0, 1, axis=0)
+    matrix = np.insert(matrix, 0, 0, axis=1)
+
+    return matrix

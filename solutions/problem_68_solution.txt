@@ -1,0 +1,15 @@
+def upside_down_matrix(list1, list2, list3):
+    result = []
+    for i in range(len(list1)):
+        temp = []
+        for j in range(len(list1[i])):
+            temp.append(list1[i][j] + list2[i][j] + list3[i][j])
+        result.append(temp)
+    return result
+
+# Vectorized equivalent
+
+import numpy as np
+
+def upside_down_matrix(list1, list2, list3):
+    return np.array(list1) + np.array(list2) + np.array(list3)

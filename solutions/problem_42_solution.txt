@@ -1,0 +1,7 @@
+import numpy as np
+
+def copy_matrix(matrix):
+    return [[elem for elem in row] for row in matrix]
+
+def copy_matrix_np(matrix):
+    return np.array(matrix, copy=True)

@@ -1,0 +1,10 @@
+import numpy as np
+
+def elementwise_divide(vec1, vec2):
+    return [x / y for x, y in zip(vec1, vec2)]
+
+vec1 = np.arange(1, 6)
+vec2 = np.arange(1, 6)
+
+elementwise_divide_vec = np.divide(vec1, vec2)
+print(elementwise_divide_vec)

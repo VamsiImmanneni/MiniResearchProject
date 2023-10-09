@@ -1,0 +1,7 @@
+def is_zero_matrix(arr):
+    return np.all(np.array(arr) == 0, axis=0)
+
+#or
+
+def is_zero_matrix(arr):
+    return np.allclose(arr, 0)

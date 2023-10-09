@@ -1,0 +1,16 @@
+import numpy as np
+
+def is_lower_triangular(mat):
+    # convert the input matrix to a Numpy array
+    mat = np.array(mat)
+
+    # extract the diagonal elements of the input matrix
+    diag = np.diag(mat)
+
+    # compare each value in the input matrix to its corresponding diagonal element
+    # if any value above the diagonal is non-zero, return False
+    if not np.all(mat <= diag[:, None]):
+        return False
+
+    # otherwise, return True
+    return True

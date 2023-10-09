@@ -1,0 +1,16 @@
+import numpy as np
+
+def matrix_multiplication(x, y):
+    matrix_product = []
+    for i in range(len(x)):
+        row = []
+        for j in range(len(y[0])):
+            col = []
+            for k in range(len(y)):
+                col.append(x[i][k] * y[k][j])
+            row.append(sum(col))
+        matrix_product.append(row)
+    return matrix_product
+
+def vectorized_matrix_multiplication(x,y):
+    return np.dot(x,y)

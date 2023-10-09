@@ -1,0 +1,16 @@
+import numpy as np
+
+def numpy_row_min(arr1, arr2):
+    return np.minimum(arr1, arr2)
+
+print(numpy_row_min([1,2,3], [4,5,6]))
+print(numpy_row_min([7,8,9], [4,5,6]))
+print(numpy_row_min([3,6,9], [2,4,6]))
+print(numpy_row_min([5,10,15], [2,1,4]))
+print(numpy_row_min([4,8,12], [3,6,9]))
+
+[1,2,3]
+[4,5,6]
+[2,4,6]
+[2,1,4]
+[3,6,

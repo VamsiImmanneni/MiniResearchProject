@@ -1,0 +1,3 @@
+def is_symmetric(arr):
+    return np.array_equal(arr, np.transpose(arr))
+np.vectorize(is_symmetric)

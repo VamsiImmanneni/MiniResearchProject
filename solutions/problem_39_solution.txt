@@ -1,0 +1,12 @@
+import numpy as np
+
+def vectorized_elementwise_sqrt(arr1, arr2):
+    """Returns the element-wise squared root of the two input arrays."""
+    return np.sqrt(arr1) + np.sqrt(arr2)
+
+arr1 = np.array([1, 4, 9, 16, 25])
+arr2 = np.array([1, 2, 3, 4, 5])
+
+print(vectorized_elementwise_sqrt(arr1, arr2))
+
+# Output: [2. 4. 6. 8. 10.]

@@ -1,0 +1,7 @@
+def column_min(cols):
+    return [min(col) for col in cols]
+
+import numpy as np
+
+def column_min_vectorized(cols):
+    return np.min(cols, axis=0)

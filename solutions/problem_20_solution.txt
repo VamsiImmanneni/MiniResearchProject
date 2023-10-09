@@ -1,0 +1,4 @@
+##################
+
+def elementwise_power(x, y):
+    return [x ** y for (x, y) in zip(x,

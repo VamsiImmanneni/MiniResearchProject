@@ -1,0 +1,13 @@
+import numpy as np
+def column_sum(la, lb):
+    a = np.array(la)
+    b = np.array(lb)
+    return list(np.sum([a, b], axis=0))
+# Use numpy.sum(axis=0) to sum each column of the input arrays
+import numpy as np
+def column_sum(la, lb):
+    return np.sum([la, lb], axis=0)
+column_sum([[1, 2], [3, 4]], [[5, 6], [7, 8]])
+
+array([[ 6,  8],
+       [10, 12]])

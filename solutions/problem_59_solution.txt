@@ -1,0 +1,8 @@
+Here is the vectorized equivalent of the `all_elements_equal` function using NumPy:
+```
+def all_elements_equal_np(*lists):
+    arr = np.array(lists)
+    return (arr == arr[0]).all()
+```
+
+This function creates a NumPy array from the input lists using the `np.array` function. It then uses the `==` operator to compare each element in the array to the first element, which serves as the reference value. The result of this comparison is a boolean array, with `True` at indices where the element is equal to the reference value and `False` at indices where it is not. The `all` function is then used to check if all the elements in the boolean array

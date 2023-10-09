@@ -1,0 +1,3 @@
+def elementwise_absolute(x, y):
+    import numpy as np
+    return np.abs(x) * np.abs(y)

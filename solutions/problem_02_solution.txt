@@ -1,0 +1,10 @@
+import numpy as np
+
+def matrix_vector_multiplication(mat, vec):
+    # convert input lists to numpy arrays
+    mat = np.array(mat)
+    vec = np.array(vec)
+
+    # compute result using numpy dot product
+    result = np.dot(mat, vec)
+    return result

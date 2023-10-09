@@ -1,0 +1,12 @@
+def diagonal_product(x, y):
+    # Initialize an array of zeros of the same shape as x
+    # This array will hold the result
+    result = np.zeros_like(x)
+
+    # Use np.diagonal(x) to get a 1-dimensional array of the diagonal elements of x
+    # Use np.diagonal(y) to get a 1-dimensional array of the diagonal elements of y
+    # Use np.multiply() to multiply these two arrays element-wise
+    # Assign the result of this multiplication to the diagonal elements of result
+    np.fill_diagonal(result, np.multiply(np.diagonal(x), np.diagonal(y)))
+
+    return result

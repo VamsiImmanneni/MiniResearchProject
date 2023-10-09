@@ -1,0 +1,22 @@
+import numpy as np
+
+def upper_triangle_elements(a, n):
+  # Initialize an empty list
+  result = []
+  
+  # Loop through the input list
+  for i in range(n):
+    # Loop through the elements in the current row, starting at i
+    for j in range(i, n):
+      # Append the current element to the result list
+      result.append(a[i][j])
+    
+  # Return the result list
+  return result
+
+# Create a vectorized version of upper_triangle_elements using NumPy
+def vectorized_upper_triangle_elements(a, n):
+  # Create a matrix where the upper triangle has all elements from a
+  result = np.triu(a)
+  
+  # Return the upper triangle

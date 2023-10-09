@@ -1,0 +1,10 @@
+import numpy as np
+def rotate_180(arr):
+    # convert input list to numpy array
+    arr = np.array(arr)
+    # use numpy's flip function to flip the array
+    flipped_arr = np.flip(arr)
+    # return the flipped array
+    return flipped_arr
+# Test
+print(rotate_180([[1, 2, 3], [4, 5, 6]]))

@@ -1,0 +1,2 @@
+def numpy_unique_elements(*args):
+    return np.unique(np.concatenate(args))

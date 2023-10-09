@@ -1,0 +1,2 @@
+def elementwise_power(x, y):
+    return np.power(x, y)

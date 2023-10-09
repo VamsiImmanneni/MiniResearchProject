@@ -1,0 +1,17 @@
+import numpy as np
+
+def anti_diagonal_product(lst1, lst2):
+    result = 0
+    for i in range(len(lst1)):
+        result += lst1[i] * lst2[-i-1]
+    return result
+
+lst1 = [1, 2, 3, 4]
+lst2 = [5, 6, 7, 8]
+
+lst1 = np.array(lst1)
+lst2 = np.array(lst2)
+
+result = np.sum(lst1 * lst2[::-1])
+
+print(result)

@@ -1,0 +1,21 @@
+**Expected Output:**
+
+
+```
+[[-1, -2, -3], [-3, -2, -1]]
+
+```
+
+
+
+```
+[[-1, -2, -3], [0, -2, 0]]
+```
+
+The provided function appears to not account for the input matrix being non-square and simply calculates the reflected values for all rows in the matrix. Therefore, the vectorized equivalent would also not account for the input matrix being non-square and simply calculate the reflected values for all rows in the matrix. 
+
+```
+import numpy as np
+
+def reflect_matrix(vec):
+    return [[-x if y%2 == 0 else x if y%2 == 1 else 0 for y

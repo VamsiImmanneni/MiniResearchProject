@@ -1,0 +1,10 @@
+import numpy as np
+
+def diagonal(a):
+    result = []
+    for i in range(len(a)):
+        result.append(a[i][i])
+    return np.array(result)
+
+def diagonal_vectorized(a):
+    return np.diag(a)

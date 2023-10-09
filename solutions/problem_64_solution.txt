@@ -1,0 +1,6 @@
+import numpy as np
+
+def sort_rows(data):
+    np_data = np.array(data)
+    sorted_data = np.sort(np_data, axis=1)
+    return sorted_data

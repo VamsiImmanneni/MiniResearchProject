@@ -1,0 +1,12 @@
+`np.tril` can be used to obtain a lower triangular matrix from a given matrix. We can compare the matrix obtained from `np.tril` with the original matrix to check if it is lower triangular. If they are equal, then the original matrix is lower triangular.
+
+```
+import numpy as np
+
+def is_lower_triangular(A):
+    return np.array_equal(A, np.tril(A))
+
+# Example
+print(is_lower_triangular([[1, 0, 0], [1, 2, 0], [3, 4, 5]]))
+# Output: True
+```

@@ -1,0 +1,10 @@
+# The NumPy vectorized equivalent of the `matrix_cumsum` function is:
+
+def matrix_cumsum(matrix):
+    import numpy as np
+    return np.cumsum(matrix, axis=1)
+
+# Example:
+
+# Input: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# Output: [[1, 3, 6], [4, 9, 15], [7, 15, 24]]

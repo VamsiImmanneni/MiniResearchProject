@@ -43,7 +43,7 @@ While typical coding challenges focus on producing a solution from scratch, our 
 
 ## Collaboration
 
-This project was completed individually, but ideas were brainstormed and discussed with a partner on 8/30.
+This project was completed individually, but ideas were brainstormed and discussed with Lining Yu on 8/30.
 
 ## License
 

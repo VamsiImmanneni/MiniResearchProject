@@ -1,0 +1,16 @@
+import numpy as np
+
+def column_sum(lst1, lst2):
+    result = []
+    for i in range(len(lst1)):
+        result.append(lst1[i] + lst2[i])
+    return result
+
+def np_column_sum(lst1, lst2):
+    return np.array(lst1) + np.array(lst2)
+
+# Test input with different lengths
+print(column_sum([1, 2, 3], [4, 5, 6]))
+print(np_column_sum([1, 2, 3], [4, 5, 6]))
+print(column_sum([1, 2, 3, 4], [5, 6, 7, 8]))
+print(np_column_sum([1

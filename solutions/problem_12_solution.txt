@@ -1,0 +1,22 @@
+import numpy as np
+
+def column_mean(arr):
+    return [sum(column)/len(column) for column in zip(*arr)]
+
+def column_mean_np(arr):
+    return np.mean(arr, axis=0)
+
+# Steps to test:
+# 1. Create an array using numpy
+# 2. Use column_mean_np() to compute the column mean
+# 3. Compare the result with the expected output from column_mean()
+
+# Example array
+arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
+# Output from column_mean_np()
+print(column_mean_np(arr))
+# Expected output from column_mean()
+print(column_mean(arr))
+
+# Output:
+# [4. 5
