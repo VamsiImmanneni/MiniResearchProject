@@ -41,7 +41,11 @@ def main():
             # If there's an error, count it as a fail
             pass
 
-    print(f"Accuracy: {correct_count / total_problems * 100}%")
+    accuracy = correct_count / total_problems * 100
+    print(f"Accuracy: {accuracy}%")
+
+    with open("output.json", "w") as f:
+        json.dump({"accuracy": accuracy}, f)
 
 
 if __name__ == "__main__":

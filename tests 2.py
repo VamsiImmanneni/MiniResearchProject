@@ -1,17 +1,25 @@
+### Problem 1: Dot Product of Two Vectors
+
 def dot_product(a, b):
+    # UNVECTORIZE THIS
     result = 0
     for i in range(len(a)):
         result += a[i] * b[i]
     return result
+#TAGS: loops, multiplication
 
+### Problem 2: Matrix-Vector Multiplication
 
 def matrix_vector_multiplication(A, v):
+    # UNVECTORIZE THIS
     result = [0] * len(A)
     for i in range(len(A)):
         for j in range(len(A[0])):
             result[i] += A[i][j] * v[j]
     return result
+#TAGS: loops, multiplication, nested loops
 
+### Problem 3: Matrix Transposition
 
 def transpose(A):
     # UNVECTORIZE THIS
